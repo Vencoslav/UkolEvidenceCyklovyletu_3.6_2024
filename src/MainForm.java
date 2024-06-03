@@ -48,7 +48,7 @@ public class MainForm extends JFrame {
 
     }
     public void display(){
-        textArea1.setText("");
+        textArea1.setText(""); // Vyčistí aktuální seznam
         for(int i = 0; i < seznam.size(); i++){
             Cyklovylet cyklovylet = seznam.get(i);
             textArea1.append((i + 1) + ". " + cyklovylet.getCil() + " (" + cyklovylet.getDelka() + " km)" + "\n");
